@@ -1,0 +1,6 @@
+step1: in continuation to task1 to get the statistical summary that is to get the numerical overview of the data to understand its spread,central tendency, and scale.
+in this step we get mean,standard deviation, smallest and larget values, 25%,50%,75% quartiles and count
+step2: to visualize the numerical features i made use of histograms. here we visualize how data is distributed that is whether it is normal, skewed, or multimodal.
+step3: to visualize median, quartiles, and outliers i made use of box plot. here i used seaaborn package.
+step4: to see how features relate to each other and to the target.correlation matrix shows numeric strength of relationships between variables, from 1 to -1.pairplot plots pairwise scatterplots and histograms.
+step5: identify patterns, trends, or anomalies in the data this helps to find insights that describe how and why survival varied.
