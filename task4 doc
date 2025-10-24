@@ -1,0 +1,5 @@
+step1:train logistic regression model. this fits the logistic regression classifier on training data.this helps learn weights to separate survivors and non-survivors.
+step2: make predictions. predicts both class labels and probabilities. this is needed for confusion matrix and ROC curve
+step3: Evaluate Metrices. it uses precision, recall, F1score and ROC-AUC. it measures model performance on classification.
+step4: confusion matrix is used to summarize TP, FP, FN, TN and pre-class accuracy.this help to identify misclassifications
+step5: visualization using ROC curve and Sigmoid Function Plot.this  shows how well the model distinguishes classes and explains how logistic regression converts score into probabilities.
