@@ -1,0 +1,5 @@
+step1: first we have to import and preprocess the dataset. since it is done in the previous task we will not repeat it again
+step2: split data into train test sets
+step3: Fit a Linear Regresiio model using sklearn.Linear_model
+step4: Evaluate the model using MAE, MSE, R^2. this metrices help to measure the model accuracy
+step5: Plot regression line and intercept coefficients. this is used to visualize how well your regression fits the data.
