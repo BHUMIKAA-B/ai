@@ -1,0 +1,20 @@
+Step1– Train Decision Tree Classifier. Create and fit a DecisionTreeClassifier() on X_train, y_train. The model learns splitting rules to classify “Survived” vs. “Not Survived”.
+Step 2– Predict on Test Data. Use .predict(X_test) to generate predictions y_pred_dt. These predictions are used to evaluate model accuracy.
+Step 3– Evaluate Decision Tree
+Compute:
+Accuracy → proportion of correct predictions.
+Classification Report → shows precision, recall, and F1-score.
+Understand how well the tree performs on unseen data.
+Step 4– Visualize the Decision Tree. Use plot_tree() to draw the tree structure.Helps visualize splits, thresholds, and decision paths.
+Step 5– Control Overfitting (Pruning). Train another tree with limited depth (max_depth=4). Compare pruned tree accuracy with full tree. If accuracy remains similar, pruning reduces overfitting and improves generalization.
+Step 6– Train Random Forest Classifier. Build RandomForestClassifier(n_estimators=100) — an ensemble of 100 trees. Fit on X_train, y_train to combine predictions from many trees.
+Step 7– Evaluate Random Forest. Calculate accuracy and classification report for the forest model. Random Forest usually gives higher accuracy and better balance between precision and recall.
+Step 8– Compare Model Accuracies
+Print and compare: Decision Tree Accuracy, Pruned Tree Accuracy, Random Forest Accuracy
+Determine which model performs best.
+Step 9– Feature Importance
+Extract and plot rf_clf.feature_importances_. Identify which features most influenced survival (e.g., Sex, Fare, Pclass).
+Step 10– Cross-Validation. Run cross_val_score(rf_clf, X_final, y_final, cv=5) to check consistency across 5 folds.
+Mean CV Accuracy ≈ model stability and reliability.
+Step 11– Confusion Matrix. Plot confusion matrix for Random Forest. Shows counts of True Positives, True Negatives, False Positives, False Negatives.
+Helps analyze where the model misclassifies.
