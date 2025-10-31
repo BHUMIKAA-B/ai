@@ -1,0 +1,31 @@
+Step1:Import Libraries
+Import SVC, GridSearchCV, cross_val_score, metrics, and plotting libraries.
+Step2:Use Preprocessed Data
+Continue with X_train, X_test, y_train, y_test, X_final, y_final from previous tasks.
+Step3:Train Linear SVM
+Create SVC(kernel='linear').
+Fit on training data.
+Predict on test set.
+Step4: Evaluate Linear SVM
+Compute accuracy and classification report.
+Plot confusion matrix.
+Step 5:Train RBF (Non-Linear) SVM
+Create SVC(kernel='rbf', C=1, gamma='scale').
+Fit on training data.
+Predict on test set.
+Step6: Evaluate RBF SVM
+Compute accuracy and classification report.
+Plot confusion matrix.
+Step 7: Compare Linear vs RBF
+Print both accuracies to see which performs better.
+Step8:Hyperparameter Tuning (Grid Search)
+Define parameter grid for C and gamma.
+Run GridSearchCV with 5-fold cross-validation.
+Obtain best_params_ and best_estimator_.
+Step 9:Evaluate Best Model
+Predict on test data with the optimized SVM.
+Measure final accuracy.
+Step 10:Cross-Validation Check
+Run cross_val_score() on X_final, y_final to validate stability.
+Step 11:Plot Final Confusion Matrix
+Visualize predictions of optimized model to see TP, TN, FP, FN.
